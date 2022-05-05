@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="card"
+   face="1B"
+   height="2.5in"
+   preserveAspectRatio="none"
+   viewBox="-120 -168 336 240"
+   width="3.5in"
+   version="1.1"
+   id="svg15078"
+   sodipodi:docname="1Br.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15080"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     inkscape:zoom="1.4761905"
+     inkscape:cx="168.33871"
+     inkscape:cy="119.90323"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg15078" />
+  <defs
+     id="defs15072">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#B1"
+       id="pattern15162"
+       patternTransform="translate(48,48)" />
+    <pattern
+       id="B1"
+       width="6"
+       height="6"
+       patternUnits="userSpaceOnUse">
+      <path
+         d="M3 0L6 3L3 6L0 3Z"
+         fill="black"
+         id="path15069" />
+    </pattern>
+  </defs>
+  <rect
+     width="239"
+     height="335"
+     x="-71.5"
+     y="-119.5"
+     rx="12"
+     ry="12"
+     fill="#ffffff"
+     stroke="#000000"
+     id="rect15074"
+     transform="rotate(-90)" />
+  <rect
+     fill="url(#B1)"
+     width="216"
+     height="312"
+     x="-60"
+     y="-108"
+     rx="12"
+     ry="12"
+     id="rect15076"
+     style="fill:url(#pattern15162)"
+     transform="rotate(-90)" />
+</svg>

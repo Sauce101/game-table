@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="card"
+   face="4C"
+   height="2.5in"
+   preserveAspectRatio="none"
+   viewBox="-120 -168 336 240"
+   width="3.5in"
+   version="1.1"
+   id="svg12289"
+   sodipodi:docname="4Cr.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12291"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     inkscape:zoom="1.4761905"
+     inkscape:cx="168.33871"
+     inkscape:cy="119.90323"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12289" />
+  <defs
+     id="defs12267">
+    <symbol
+       id="SC4"
+       viewBox="-600 -600 1200 1200"
+       preserveAspectRatio="xMinYMid">
+      <path
+         d="m 30,150 c 5,235 55,250 100,350 H -130 C -85,400 -35,385 -30,150 a 10,10 0 0 0 -20,0 210,210 0 1 1 -74,-201 10,10 0 0 0 14,-14 230,230 0 1 1 220,0 10,10 0 0 0 14,14 210,210 0 1 1 -74,201 10,10 0 0 0 -20,0 z"
+         fill="#000000"
+         id="path12261" />
+    </symbol>
+    <symbol
+       id="VC4"
+       viewBox="-500 -500 1000 1000"
+       preserveAspectRatio="xMinYMid">
+      <path
+         d="m 50,460 h 200 m -100,0 v -920 l -450,635 v 25 h 570"
+         stroke="#000000"
+         stroke-width="80"
+         stroke-linecap="square"
+         stroke-miterlimit="1.5"
+         fill="none"
+         id="path12264" />
+    </symbol>
+  </defs>
+  <rect
+     width="239"
+     height="335"
+     x="-71.5"
+     y="-119.5"
+     rx="12"
+     ry="12"
+     fill="#ffffff"
+     stroke="#000000"
+     id="rect12269"
+     transform="rotate(-90)" />
+  <use
+     xlink:href="#VC4"
+     height="32"
+     width="32"
+     x="-114.4"
+     y="-156"
+     id="use12271"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SC4"
+     height="26.768999"
+     width="26.768999"
+     x="-111.784"
+     y="-119"
+     id="use12273"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SC4"
+     height="70"
+     width="70"
+     x="-87.500999"
+     y="-135.588"
+     id="use12275"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SC4"
+     height="70"
+     width="70"
+     x="17.500999"
+     y="-135.588"
+     id="use12277"
+     transform="rotate(-90,0,-48)" />
+  <g
+     transform="rotate(90,48,0)"
+     id="g12287">
+    <use
+       xlink:href="#VC4"
+       height="32"
+       width="32"
+       x="-114.4"
+       y="-156"
+       id="use12279" />
+    <use
+       xlink:href="#SC4"
+       height="26.768999"
+       width="26.768999"
+       x="-111.784"
+       y="-119"
+       id="use12281" />
+    <use
+       xlink:href="#SC4"
+       height="70"
+       width="70"
+       x="-87.500999"
+       y="-135.588"
+       id="use12283" />
+    <use
+       xlink:href="#SC4"
+       height="70"
+       width="70"
+       x="17.500999"
+       y="-135.588"
+       id="use12285" />
+  </g>
+</svg>

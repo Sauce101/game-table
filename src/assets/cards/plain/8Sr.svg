@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="card"
+   face="8S"
+   height="2.5in"
+   preserveAspectRatio="none"
+   viewBox="-120 -168 336 240"
+   width="3.5in"
+   version="1.1"
+   id="svg7393"
+   sodipodi:docname="8Sr.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7395"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     inkscape:zoom="1.4761905"
+     inkscape:cx="168.33871"
+     inkscape:cy="119.90323"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7393" />
+  <defs
+     id="defs7363">
+    <symbol
+       id="SS8"
+       viewBox="-600 -600 1200 1200"
+       preserveAspectRatio="xMinYMid">
+      <path
+         d="m 0,-500 c 100,250 355,400 355,685 a 150,150 0 0 1 -300,0 10,10 0 0 0 -20,0 c 0,200 50,215 95,315 h -260 c 45,-100 95,-115 95,-315 a 10,10 0 0 0 -20,0 150,150 0 0 1 -300,0 c 0,-285 255,-435 355,-685 z"
+         fill="#000000"
+         id="path7357" />
+    </symbol>
+    <symbol
+       id="VS8"
+       viewBox="-500 -500 1000 1000"
+       preserveAspectRatio="xMinYMid">
+      <path
+         d="m -1,-50 a 205,205 0 1 1 2,0 h -2 a 255,255 0 1 0 2,0 z"
+         stroke="#000000"
+         stroke-width="80"
+         stroke-linecap="square"
+         stroke-miterlimit="1.5"
+         fill="none"
+         id="path7360" />
+    </symbol>
+  </defs>
+  <rect
+     width="239"
+     height="335"
+     x="-71.5"
+     y="-119.5"
+     rx="12"
+     ry="12"
+     fill="#ffffff"
+     stroke="#000000"
+     id="rect7365"
+     transform="rotate(-90)" />
+  <use
+     xlink:href="#VS8"
+     height="32"
+     width="32"
+     x="-114.4"
+     y="-156"
+     id="use7367"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SS8"
+     height="26.768999"
+     width="26.768999"
+     x="-111.784"
+     y="-119"
+     id="use7369"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SS8"
+     height="70"
+     width="70"
+     x="-87.500999"
+     y="-135.50101"
+     id="use7371"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SS8"
+     height="70"
+     width="70"
+     x="17.500999"
+     y="-135.50101"
+     id="use7373"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SS8"
+     height="70"
+     width="70"
+     x="-35"
+     y="-85.25"
+     id="use7375"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SS8"
+     height="70"
+     width="70"
+     x="-87.500999"
+     y="-35"
+     id="use7377"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SS8"
+     height="70"
+     width="70"
+     x="17.500999"
+     y="-35"
+     id="use7379"
+     transform="rotate(-90,0,-48)" />
+  <g
+     transform="rotate(90,48,0)"
+     id="g7391">
+    <use
+       xlink:href="#VS8"
+       height="32"
+       width="32"
+       x="-114.4"
+       y="-156"
+       id="use7381" />
+    <use
+       xlink:href="#SS8"
+       height="26.768999"
+       width="26.768999"
+       x="-111.784"
+       y="-119"
+       id="use7383" />
+    <use
+       xlink:href="#SS8"
+       height="70"
+       width="70"
+       x="-87.500999"
+       y="-135.50101"
+       id="use7385" />
+    <use
+       xlink:href="#SS8"
+       height="70"
+       width="70"
+       x="17.500999"
+       y="-135.50101"
+       id="use7387" />
+    <use
+       xlink:href="#SS8"
+       height="70"
+       width="70"
+       x="-35"
+       y="-85.25"
+       id="use7389" />
+  </g>
+</svg>

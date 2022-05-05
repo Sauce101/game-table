@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="card"
+   face="TD"
+   height="2.5in"
+   preserveAspectRatio="none"
+   viewBox="-120 -168 336 240"
+   width="3.5in"
+   version="1.1"
+   id="svg160"
+   sodipodi:docname="TDr.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview162"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     inkscape:zoom="1.4761905"
+     inkscape:cx="168.33871"
+     inkscape:cy="119.90323"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg160" />
+  <defs
+     id="defs126">
+    <symbol
+       id="SDT"
+       viewBox="-600 -600 1200 1200"
+       preserveAspectRatio="xMinYMid">
+      <path
+         d="M -400,0 C -350,0 0,-450 0,-500 0,-450 350,0 400,0 350,0 0,450 0,500 0,450 -350,0 -400,0 Z"
+         fill="#ff0000"
+         id="path120" />
+    </symbol>
+    <symbol
+       id="VDT"
+       viewBox="-500 -500 1000 1000"
+       preserveAspectRatio="xMinYMid">
+      <path
+         d="M -260,430 V -430 M -50,0 v -310 a 150,150 0 0 1 300,0 v 620 a 150,150 0 0 1 -300,0 z"
+         stroke="#ff0000"
+         stroke-width="80"
+         stroke-linecap="square"
+         stroke-miterlimit="1.5"
+         fill="none"
+         id="path123" />
+    </symbol>
+  </defs>
+  <rect
+     width="239"
+     height="335"
+     x="-167.5"
+     y="-215.5"
+     rx="12"
+     ry="12"
+     fill="#ffffff"
+     stroke="#000000"
+     id="rect128"
+     transform="rotate(90)" />
+  <use
+     xlink:href="#VDT"
+     height="32"
+     width="32"
+     x="-114.4"
+     y="-156"
+     id="use130"
+     transform="rotate(90,48,0)" />
+  <use
+     xlink:href="#SDT"
+     height="26.768999"
+     width="26.768999"
+     x="-111.784"
+     y="-119"
+     id="use132"
+     transform="rotate(90,48,0)" />
+  <use
+     xlink:href="#SDT"
+     height="70"
+     width="70"
+     x="-87.500999"
+     y="-135.50101"
+     id="use134"
+     transform="rotate(90,48,0)" />
+  <use
+     xlink:href="#SDT"
+     height="70"
+     width="70"
+     x="17.500999"
+     y="-135.50101"
+     id="use136"
+     transform="rotate(90,48,0)" />
+  <use
+     xlink:href="#SDT"
+     height="70"
+     width="70"
+     x="-87.500999"
+     y="-68.5"
+     id="use138"
+     transform="rotate(90,48,0)" />
+  <use
+     xlink:href="#SDT"
+     height="70"
+     width="70"
+     x="17.500999"
+     y="-68.5"
+     id="use140"
+     transform="rotate(90,48,0)" />
+  <use
+     xlink:href="#SDT"
+     height="70"
+     width="70"
+     x="-35"
+     y="-102"
+     id="use142"
+     transform="rotate(90,48,0)" />
+  <g
+     transform="rotate(-90,0,-48)"
+     id="g158">
+    <use
+       xlink:href="#VDT"
+       height="32"
+       width="32"
+       x="-114.4"
+       y="-156"
+       id="use144" />
+    <use
+       xlink:href="#SDT"
+       height="26.768999"
+       width="26.768999"
+       x="-111.784"
+       y="-119"
+       id="use146" />
+    <use
+       xlink:href="#SDT"
+       height="70"
+       width="70"
+       x="-87.500999"
+       y="-135.50101"
+       id="use148" />
+    <use
+       xlink:href="#SDT"
+       height="70"
+       width="70"
+       x="17.500999"
+       y="-135.50101"
+       id="use150" />
+    <use
+       xlink:href="#SDT"
+       height="70"
+       width="70"
+       x="-87.500999"
+       y="-68.5"
+       id="use152" />
+    <use
+       xlink:href="#SDT"
+       height="70"
+       width="70"
+       x="17.500999"
+       y="-68.5"
+       id="use154" />
+    <use
+       xlink:href="#SDT"
+       height="70"
+       width="70"
+       x="-35"
+       y="-102"
+       id="use156" />
+  </g>
+</svg>

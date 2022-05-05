@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="card"
+   face="9H"
+   height="2.5in"
+   preserveAspectRatio="none"
+   viewBox="-120 -168 336 240"
+   width="3.5in"
+   version="1.1"
+   id="svg6578"
+   sodipodi:docname="9Hr.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6580"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="in"
+     showgrid="false"
+     inkscape:zoom="1.4761905"
+     inkscape:cx="168.33871"
+     inkscape:cy="119.90323"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6578" />
+  <defs
+     id="defs6546">
+    <symbol
+       id="SH9"
+       viewBox="-600 -600 1200 1200"
+       preserveAspectRatio="xMinYMid">
+      <path
+         d="m 0,-300 c 0,-100 100,-200 200,-200 100,0 200,100 200,250 C 400,0 0,400 0,500 0,400 -400,0 -400,-250 c 0,-150 100,-250 200,-250 100,0 200,100 200,200 z"
+         fill="#ff0000"
+         id="path6540" />
+    </symbol>
+    <symbol
+       id="VH9"
+       viewBox="-500 -500 1000 1000"
+       preserveAspectRatio="xMinYMid">
+      <path
+         d="m 250,-100 a 250,250 0 0 1 -500,0 v -110 a 250,250 0 0 1 500,0 V 210 A 250,250 0 0 1 0,460 c -150,0 -180,-60 -200,-85"
+         stroke="#ff0000"
+         stroke-width="80"
+         stroke-linecap="square"
+         stroke-miterlimit="1.5"
+         fill="none"
+         id="path6543" />
+    </symbol>
+  </defs>
+  <rect
+     width="239"
+     height="335"
+     x="-71.5"
+     y="-119.5"
+     rx="12"
+     ry="12"
+     fill="#ffffff"
+     stroke="#000000"
+     id="rect6548"
+     transform="rotate(-90)" />
+  <use
+     xlink:href="#VH9"
+     height="32"
+     width="32"
+     x="-114.4"
+     y="-156"
+     id="use6550"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SH9"
+     height="26.768999"
+     width="26.768999"
+     x="-111.784"
+     y="-119"
+     id="use6552"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SH9"
+     height="70"
+     width="70"
+     x="-87.500999"
+     y="-135.50101"
+     id="use6554"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SH9"
+     height="70"
+     width="70"
+     x="17.500999"
+     y="-135.50101"
+     id="use6556"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SH9"
+     height="70"
+     width="70"
+     x="-87.500999"
+     y="-68.5"
+     id="use6558"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SH9"
+     height="70"
+     width="70"
+     x="17.500999"
+     y="-68.5"
+     id="use6560"
+     transform="rotate(-90,0,-48)" />
+  <use
+     xlink:href="#SH9"
+     height="70"
+     width="70"
+     x="-35"
+     y="-35"
+     id="use6562"
+     transform="rotate(-90,0,-48)" />
+  <g
+     transform="rotate(90,48,0)"
+     id="g6576">
+    <use
+       xlink:href="#VH9"
+       height="32"
+       width="32"
+       x="-114.4"
+       y="-156"
+       id="use6564" />
+    <use
+       xlink:href="#SH9"
+       height="26.768999"
+       width="26.768999"
+       x="-111.784"
+       y="-119"
+       id="use6566" />
+    <use
+       xlink:href="#SH9"
+       height="70"
+       width="70"
+       x="-87.500999"
+       y="-135.50101"
+       id="use6568" />
+    <use
+       xlink:href="#SH9"
+       height="70"
+       width="70"
+       x="17.500999"
+       y="-135.50101"
+       id="use6570" />
+    <use
+       xlink:href="#SH9"
+       height="70"
+       width="70"
+       x="-87.500999"
+       y="-68.5"
+       id="use6572" />
+    <use
+       xlink:href="#SH9"
+       height="70"
+       width="70"
+       x="17.500999"
+       y="-68.5"
+       id="use6574" />
+  </g>
+</svg>
