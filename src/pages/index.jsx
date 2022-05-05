@@ -37,11 +37,11 @@ const theme = createTheme({
 })
 
 const games = [
-  { table: 'highcard', icon: hilow },
-  { table: 'fivecard', icon: fivestud },
-  { table: 'craps', icon: crapspic },
-  { table: 'pokerdice', icon: pokerdpic },
-  { table: 'yahtzee', icon: yahtzeepic },
+  { table: '/highcard', icon: hilow },
+  { table: '/fivecard', icon: fivestud },
+  { table: '/craps', icon: crapspic },
+  { table: '/pokerdice', icon: pokerdpic },
+  { table: '/yahtzee', icon: yahtzeepic },
 ]
 // Die size
 let cardsize = {
@@ -114,7 +114,7 @@ export default function Album() {
                 >
                   <CardActionArea
                     component={Link}
-                    href={`/${game.table}`}
+                    href={game.table}
                     underline="none"
                     sx={{
                       borderRadius: 16,
