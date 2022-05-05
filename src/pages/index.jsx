@@ -37,11 +37,11 @@ const theme = createTheme({
 })
 
 const games = [
-  { table: '/highcard', icon: hilow },
-  { table: '/fivecard', icon: fivestud },
-  { table: '/craps', icon: crapspic },
-  { table: '/pokerdice', icon: pokerdpic },
-  { table: '/yahtzee', icon: yahtzeepic },
+  { table: 'highcard', icon: hilow },
+  { table: 'fivecard', icon: fivestud },
+  { table: 'craps', icon: crapspic },
+  { table: 'pokerdice', icon: pokerdpic },
+  { table: 'yahtzee', icon: yahtzeepic },
 ]
 // Die size
 let cardsize = {
@@ -50,7 +50,7 @@ let cardsize = {
   cardWidthP: '40%',
 }
 
-export default function Album() {
+export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -73,22 +73,13 @@ export default function Album() {
             </Typography>
           </Toolbar>
         </AppBar>
-        <Container
-          sx={{
-            //
-            mb: 'auto',
-            // pb: 16,
-          }}
-          maxWidth="lg"
-        >
-          {/* End hero unit */}
-          {/* <Container maxWidth="md"> */}
+        <Container sx={{ mb: 'auto' }} maxWidth="lg">
           <Grid
             sx={{
               '@media (orientation: portrait)': {
                 display: 'grid',
                 gridTemplateRows: 'repeat(5, 1fr)',
-                gap: 5,
+                gap: 3,
                 mb: 'auto',
               },
               '@media (orientation: landscape)': {
@@ -126,7 +117,6 @@ export default function Album() {
                   >
                     <CardMedia
                       component="img"
-                      // height="180"
                       src={game.icon}
                       alt="rainy"
                       sx={{
@@ -139,7 +129,6 @@ export default function Album() {
             ))}
           </Grid>
         </Container>
-        {/* </main> */}
         {/* Footer */}
         <Box sx={{ bgcolor: 'secondary.main', p: 2 }} component="footer">
           <Typography variant="h6" align="center" color="white" gutterBottom>
@@ -153,7 +142,6 @@ export default function Album() {
           >
             {'Copyright © '} 2022
           </Typography>
-          {/* <Copyright /> */}
         </Box>
         {/* End footer */}
       </Box>
