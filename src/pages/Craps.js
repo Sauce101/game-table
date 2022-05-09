@@ -53,8 +53,8 @@ export default function Craps() {
             >
               Craps
             </Typography>
-            <Box className="hamburger" sx={{ marginLeft: 'auto' }}>
-              <SelectMenu className="hamburger" />
+            <Box sx={{ marginLeft: 'auto' }}>
+              <SelectMenu />
             </Box>
           </Toolbar>
         </AppBar>

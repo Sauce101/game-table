@@ -104,15 +104,6 @@ export default function Setone() {
     to: { transform: 'rotate(360deg)' },
   })
 
-  // const spinrate = [0.3, 0.4, 0.5, 0.6, 0.7]
-
-  // const POSITION = [
-  //   playerCard,
-  //   playerCardB,
-  //   playerCardC,
-  //   playerCardD,
-  //   playerCardE,
-  // ]
   const POSITION = [
     { play: playerCard, spinrate: '0.5s' },
     { play: playerCardB, spinrate: '0.6s' },
@@ -147,7 +138,7 @@ export default function Setone() {
                     maxWidth: cardsize.cardWidthP,
                     borderRadius: cardsize.radius,
                     margin: 'auto',
-                    animation: `${diespin} .3s 1 ease-out`,
+                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
                   },
                   '@media (orientation: landscape)': {
                     maxWidth: cardsize.cardWidthL,
