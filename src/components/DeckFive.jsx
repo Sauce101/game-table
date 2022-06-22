@@ -68,13 +68,12 @@ export default function DeckFive() {
             display: 'grid',
             gridTemplateRows: 'repeat(5, 1fr)',
             gap: 3,
-            mb: 'auto',
           },
           '@media (orientation: landscape)': {
             display: 'grid',
             gridTemplateColumns: 'repeat(5, 1fr)',
-            mb: 'auto',
           },
+          mb: 'auto',
         }}
       >
         {POSITION.map(spot => (

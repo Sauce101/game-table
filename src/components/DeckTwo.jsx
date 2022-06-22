@@ -55,13 +55,12 @@ export default function DeckTwo() {
             display: 'grid',
             gridTemplateRows: 'repeat(3, 1fr)',
             gap: 5,
-            mb: 'auto',
           },
           '@media (orientation: landscape)': {
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
-            mb: 'auto',
           },
+          mb: 'auto',
         }}
       >
         <Grid item xs={12} sm={4} sx={{ perspective: '1000px' }}>
