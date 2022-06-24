@@ -12,9 +12,6 @@ function StartGame() {
   const fulldeck = Math.ceil(deck.numberOfCards)
   playerDeck = new Deck(deck.cards.slice(0, fulldeck))
 
-  // const deckMidpoint = Math.ceil(deck.numberOfCards / 2)
-  // playerDeck = new Deck(deck.cards.slice(0, deckMidpoint))
-
   playerCard = playerDeck.pop()
   playerCardB = playerDeck.pop()
   playerCardC = playerDeck.pop()
@@ -73,7 +70,7 @@ export default function DeckFive() {
             display: 'grid',
             gridTemplateColumns: 'repeat(5, 1fr)',
           },
-          mb: 'auto',
+          my: 'auto',
         }}
       >
         {POSITION.map(spot => (

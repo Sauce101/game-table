@@ -1,4 +1,3 @@
-import React from 'react'
 import SelectMenu from '../components/SelectMenu'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { AppBar, Box, CssBaseline, Toolbar, Typography } from '@mui/material'
@@ -35,10 +34,9 @@ export default function FiveCard() {
         }}
       >
         <AppBar
-          position="relative"
+          position="sticky"
           sx={{
             backgroundColor: 'secondary.main',
-            mb: 'auto',
           }}
         >
           <Toolbar>
