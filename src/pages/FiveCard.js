@@ -1,7 +1,7 @@
 import SelectMenu from '../components/SelectMenu'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import { AppBar, Box, CssBaseline, Toolbar, Typography } from '@mui/material'
-import DeckFive from '../components/DeckFive'
+import DeckFiveNew from '../components/DeckFiveNew'
 
 const theme = createTheme({
   palette: {
@@ -31,6 +31,7 @@ export default function FiveCard() {
           justifyContent: 'center',
           minHeight: '100vh',
           backgroundColor: 'primary.main',
+          position: 'relative',
         }}
       >
         <AppBar
@@ -56,7 +57,7 @@ export default function FiveCard() {
             </Box>
           </Toolbar>
         </AppBar>
-        <DeckFive />
+        <DeckFiveNew />
       </Box>
     </ThemeProvider>
   )

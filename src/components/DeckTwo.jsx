@@ -44,7 +44,6 @@ export default function DeckTwo() {
     radius: '14px',
     cardWidthL: '55%',
     cardWidthP: '27%',
-    // cardWidthP: "32%",
   }
 
   return (
