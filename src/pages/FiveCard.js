@@ -50,7 +50,7 @@ export default function FiveCard() {
                 mr: 'auto',
               }}
             >
-              Five Card
+              Five Card Stud
             </Typography>
             <Box className="hamburger" sx={{ marginLeft: 'auto' }}>
               <SelectMenu className="hamburger" />
