@@ -27,7 +27,6 @@ const FiveDataNew = ({ flipCards, playerCard, nextdeck, ...cardsize }) => {
       <Card
         sx={{
           '@media (orientation: portrait)': {
-            // maxWidth: cardsize.cardWidthP,
             '@media (max-height: 739px)': {
               maxWidth: cardsize.cardWidthPsm,
             },
@@ -73,7 +72,6 @@ const FiveDataNew = ({ flipCards, playerCard, nextdeck, ...cardsize }) => {
       <Card
         sx={{
           '@media (orientation: portrait)': {
-            // maxWidth: cardsize.cardWidthP,
             '@media (max-height: 739px)': {
               maxWidth: cardsize.cardWidthPsm,
             },

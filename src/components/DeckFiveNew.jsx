@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { Grid } from '@mui/material'
 import Deck from './deck/PlainDeck'
 import FiveDataNew from './cardData/FiveDataNew'
-// import useMediaQuery from '@mui/material/useMediaQuery'
 
 let playerDeck, playerCard, playerCardB, playerCardC, playerCardD, playerCardE
 
@@ -60,10 +59,6 @@ export default function DeckFiveNew() {
     playerCardE,
   ]
 
-  // const devicePortrait = useMediaQuery('(orientation: portrait)')
-  // const deviceLandscape = useMediaQuery('(orientation: landscape)')
-  // const tabletWide = useMediaQuery('(min-width:900px)')
-
   return (
     <>
       <Grid
@@ -82,7 +77,7 @@ export default function DeckFiveNew() {
       >
         {POSITION.map(spot => (
           <Grid
-            // item
+            item
             sx={{
               perspective: '1000px',
             }}
