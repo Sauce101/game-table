@@ -26,7 +26,7 @@ export default function DeckFiveNew() {
     return true
   })
   const [nextdeck, setNextdeck] = useState(() => {
-    return true
+    return false
   })
 
   useEffect(() => {
