@@ -69,6 +69,7 @@ export default function DeckFiveNew() {
             display: 'grid',
             gridTemplateColumns: '1fr',
             gap: 2,
+            mt: 8,
           },
           '@media (orientation: landscape)': {
             display: 'grid',
