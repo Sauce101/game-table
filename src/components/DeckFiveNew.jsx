@@ -3,7 +3,7 @@ import { Grid } from '@mui/material'
 import Deck from './deck/PlainDeck'
 import FiveDataNew from './cardData/FiveDataNew'
 
-let playerDeck, playerCard, playerCardB, playerCardC, playerCardD, playerCardE
+let playerDeck, playerCardA, playerCardB, playerCardC, playerCardD, playerCardE
 
 function StartGame() {
   const deck = new Deck()
@@ -12,7 +12,7 @@ function StartGame() {
   const fulldeck = Math.ceil(deck.numberOfCards)
   playerDeck = new Deck(deck.cards.slice(0, fulldeck))
 
-  playerCard = playerDeck.pop()
+  playerCardA = playerDeck.pop()
   playerCardB = playerDeck.pop()
   playerCardC = playerDeck.pop()
   playerCardD = playerDeck.pop()
@@ -29,16 +29,9 @@ export default function DeckFiveNew() {
   })
 
   useEffect(() => {
-    playerCard = playerDeck.pop()
+    playerCardA = playerDeck.pop()
     playerCardB = playerDeck.pop()
     playerCardC = playerDeck.pop()
-    if (playerDeck.numberOfCards === 0) {
-      StartGame()
-      setNextdeck(!nextdeck)
-    }
-  }, [topcard, nextdeck])
-
-  useEffect(() => {
     playerCardD = playerDeck.pop()
     playerCardE = playerDeck.pop()
     if (playerDeck.numberOfCards === 0) {
@@ -52,14 +45,15 @@ export default function DeckFiveNew() {
   // Card size
   let cardsize = {
     radius: '12px',
-    cardWidthL: '65%',
+    // cardWidthL: '65%',
+    cardWidthL: '100%',
     cardWidthPsm: '18%',
     cardWidthP: '24%',
     cardWidthPmd: '16%',
   }
 
   const POSITION = [
-    playerCard,
+    playerCardA,
     playerCardB,
     playerCardC,
     playerCardD,
@@ -79,6 +73,9 @@ export default function DeckFiveNew() {
           '@media (orientation: landscape)': {
             display: 'grid',
             gridTemplateColumns: 'repeat(5, 1fr)',
+            gap: 5,
+            px: 5,
+            mt: 8,
           },
         }}
       >

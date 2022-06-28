@@ -34,11 +34,11 @@ export default function FiveCardNew() {
       <Stack
         direction="column"
         justifyContent="center"
-        spacing={8}
+        // spacing={8}
         sx={{
           minHeight: '100vh',
           backgroundColor: 'primary.main',
-          position: 'relative',
+          overflow: 'hidden',
         }}
       >
         <AppBar
