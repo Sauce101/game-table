@@ -45,7 +45,6 @@ export default function DeckFiveNew() {
   // Card size
   let cardsize = {
     radius: '12px',
-    // cardWidthL: '65%',
     cardWidthL: '100%',
     cardWidthPsm: '18%',
     cardWidthP: '24%',
@@ -53,11 +52,11 @@ export default function DeckFiveNew() {
   }
 
   let POSITION = [
-    { play: playerCardA, spin: '0.3s' },
-    { play: playerCardB, spin: '0.4s' },
-    { play: playerCardC, spin: '0.5s' },
-    { play: playerCardD, spin: '0.6s' },
-    { play: playerCardE, spin: '0.7s' },
+    { play: playerCardA, spin: '.4s' },
+    { play: playerCardB, spin: '.5s' },
+    { play: playerCardC, spin: '.6s' },
+    { play: playerCardD, spin: '.7s' },
+    { play: playerCardE, spin: '.8s' },
   ]
 
   return (
@@ -72,16 +71,10 @@ export default function DeckFiveNew() {
           },
           '@media (orientation: landscape)': {
             display: 'grid',
-            // gridTemplateColumns: 'repeat(5, 1fr)',
-            // gridTemplateRows: '1fr',
             gridTemplate: '1fr / repeat(5, 1fr)',
-            direction: 'row',
-            justifyContent: 'center',
-            alignItems: 'row',
             gap: 5,
             px: 5,
           },
-          mt: 8,
         }}
       >
         {POSITION.map(spot => (
