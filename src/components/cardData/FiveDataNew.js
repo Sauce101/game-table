@@ -2,7 +2,7 @@ import React from 'react'
 import { Card, CardActionArea, CardMedia } from '@mui/material'
 import { keyframes } from '@emotion/react'
 import RedDBack from '../../assets/cards/plain/2B.svg'
-import DarkDBack from '../../assets/cards/plain/1B.svg'
+// import DarkDBack from '../../assets/cards/plain/1B.svg'
 
 const FiveDataNew = ({
   flipCards,
@@ -67,7 +67,8 @@ const FiveDataNew = ({
         <CardActionArea onClick={flipCards}>
           <CardMedia
             component="img"
-            src={nextdeck ? RedDBack : DarkDBack}
+            // src={nextdeck ? RedDBack : DarkDBack}
+            src={RedDBack}
             alt="card"
           />
         </CardActionArea>
