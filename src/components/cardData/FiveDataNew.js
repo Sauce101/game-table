@@ -4,7 +4,13 @@ import { keyframes } from '@emotion/react'
 import RedDBack from '../../assets/cards/plain/2B.svg'
 import DarkDBack from '../../assets/cards/plain/1B.svg'
 
-const FiveDataNew = ({ flipCards, playerCard, nextdeck, ...cardsize }) => {
+const FiveDataNew = ({
+  flipCards,
+  playerCard,
+  spin,
+  nextdeck,
+  ...cardsize
+}) => {
   const rotationPortrait = keyframes({
     from: { transform: 'rotateX(0deg)' },
     to: { transform: 'rotateX(360deg)' },
@@ -44,20 +50,17 @@ const FiveDataNew = ({ flipCards, playerCard, nextdeck, ...cardsize }) => {
             bottom: '0',
             right: '0',
             margin: 'auto',
-            animation: `${backsidePortrait} .3s 1 linear`,
+            animation: `${backsidePortrait} ${spin} 1 linear`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
           },
           '@media (orientation: landscape)': {
             maxWidth: cardsize.cardWidthL,
             borderRadius: cardsize.radius,
-            animation: `${backsideLandscape} .3s 1 linear`,
+            animation: `${backsideLandscape} ${spin} 1 ease-out`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
             position: 'absolute',
-            left: 0,
-            right: 0,
-            margin: '0 auto',
           },
         }}
       >
@@ -89,20 +92,17 @@ const FiveDataNew = ({ flipCards, playerCard, nextdeck, ...cardsize }) => {
             left: '0',
             right: '0',
             margin: 'auto',
-            animation: `${rotationPortrait} .3s 1 linear`,
+            animation: `${rotationPortrait} ${spin} 1 linear`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
           },
           '@media (orientation: landscape)': {
             maxWidth: cardsize.cardWidthL,
             borderRadius: cardsize.radius,
-            animation: `${rotationLandscape} .3s 1 linear`,
+            animation: `${rotationLandscape} ${spin} 1 ease-out`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
             position: 'relative',
-            left: 0,
-            right: 0,
-            margin: '0 auto',
           },
         }}
       >

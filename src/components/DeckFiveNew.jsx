@@ -52,12 +52,12 @@ export default function DeckFiveNew() {
     cardWidthPmd: '16%',
   }
 
-  const POSITION = [
-    playerCardA,
-    playerCardB,
-    playerCardC,
-    playerCardD,
-    playerCardE,
+  let POSITION = [
+    { play: playerCardA, spin: '0.3s' },
+    { play: playerCardB, spin: '0.4s' },
+    { play: playerCardC, spin: '0.5s' },
+    { play: playerCardD, spin: '0.6s' },
+    { play: playerCardE, spin: '0.7s' },
   ]
 
   return (
@@ -69,15 +69,19 @@ export default function DeckFiveNew() {
             display: 'grid',
             gridTemplateColumns: '1fr',
             gap: 2,
-            mt: 8,
           },
           '@media (orientation: landscape)': {
             display: 'grid',
-            gridTemplateColumns: 'repeat(5, 1fr)',
+            // gridTemplateColumns: 'repeat(5, 1fr)',
+            // gridTemplateRows: '1fr',
+            gridTemplate: '1fr / repeat(5, 1fr)',
+            direction: 'row',
+            justifyContent: 'center',
+            alignItems: 'row',
             gap: 5,
             px: 5,
-            mt: 8,
           },
+          mt: 8,
         }}
       >
         {POSITION.map(spot => (
@@ -86,12 +90,13 @@ export default function DeckFiveNew() {
             sx={{
               perspective: '1000px',
             }}
-            key={spot}
+            key={spot.play}
           >
             {(topcard || !topcard) && (
               <FiveDataNew
                 flipCards={flipCards}
-                playerCard={spot}
+                playerCard={spot.play}
+                spin={spot.spin}
                 nextdeck={nextdeck}
                 {...cardsize}
               />
