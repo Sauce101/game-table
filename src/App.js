@@ -9,7 +9,7 @@ import HighCard from './pages/HighCard'
 import Craps from './pages/Craps'
 import Pokerdice from './pages/Pokerdice'
 import Yahtzee from './pages/Yahtzee'
-import FiveCard from './pages/FiveCard'
+import FiveCardNew from './pages/FiveCardNew'
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/lobby" element={<Navigate to="/" />} />
           <Route path="/highcard" element={<HighCard />} />
-          <Route path="/fivecard" element={<FiveCard />} />
+          <Route path="/fivecard" element={<FiveCardNew />} />
           <Route path="/craps" element={<Craps />} />
           <Route path="/pokerdice" element={<Pokerdice />} />
           <Route path="/yahtzee" element={<Yahtzee />} />

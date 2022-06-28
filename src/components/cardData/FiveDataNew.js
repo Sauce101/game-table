@@ -85,8 +85,8 @@ const FiveDataNew = ({ flipCards, playerCard, nextdeck, ...cardsize }) => {
             borderRadius: cardsize.radius,
             position: 'relative',
             top: '0',
-            left: '0',
             bottom: '0',
+            left: '0',
             right: '0',
             margin: 'auto',
             animation: `${rotationPortrait} .3s 1 linear`,
@@ -106,7 +106,10 @@ const FiveDataNew = ({ flipCards, playerCard, nextdeck, ...cardsize }) => {
           },
         }}
       >
-        <CardActionArea onClick={flipCards}>
+        <CardActionArea
+          onClick={flipCards}
+          sx={{ color: 'red', ...(nextdeck === false && { color: 'black' }) }}
+        >
           <CardMedia component="img" src={playerCard} alt="card" />
         </CardActionArea>
       </Card>

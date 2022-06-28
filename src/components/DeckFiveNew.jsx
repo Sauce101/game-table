@@ -32,6 +32,13 @@ export default function DeckFiveNew() {
     playerCard = playerDeck.pop()
     playerCardB = playerDeck.pop()
     playerCardC = playerDeck.pop()
+    if (playerDeck.numberOfCards === 0) {
+      StartGame()
+      setNextdeck(!nextdeck)
+    }
+  }, [topcard, nextdeck])
+
+  useEffect(() => {
     playerCardD = playerDeck.pop()
     playerCardE = playerDeck.pop()
     if (playerDeck.numberOfCards === 0) {
@@ -62,6 +69,7 @@ export default function DeckFiveNew() {
   return (
     <>
       <Grid
+        container
         sx={{
           '@media (orientation: portrait)': {
             display: 'grid',
@@ -72,7 +80,6 @@ export default function DeckFiveNew() {
             display: 'grid',
             gridTemplateColumns: 'repeat(5, 1fr)',
           },
-          my: 'auto',
         }}
       >
         {POSITION.map(spot => (

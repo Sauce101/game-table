@@ -29,7 +29,7 @@ const DeckCardData = ({ flipCards, nextdeck, ...cardsize }) => {
         <CardMedia
           component="img"
           src={nextdeck ? RedDBack : DarkDBack}
-          alt="red diamond back"
+          alt="diamond back"
         />
       </CardActionArea>
     </Card>
