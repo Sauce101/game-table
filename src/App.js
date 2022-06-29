@@ -5,7 +5,7 @@ import {
   Navigate,
 } from 'react-router-dom'
 import Home from './pages'
-import HighCard from './pages/HighCard'
+import HighCardNew from './pages/HighCardNew'
 import Craps from './pages/Craps'
 import Pokerdice from './pages/Pokerdice'
 import Yahtzee from './pages/Yahtzee'
@@ -18,7 +18,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/lobby" element={<Navigate to="/" />} />
-          <Route path="/highcard" element={<HighCard />} />
+          <Route path="/highcard" element={<HighCardNew />} />
           <Route path="/fivecard" element={<FiveCardNew />} />
           <Route path="/craps" element={<Craps />} />
           <Route path="/pokerdice" element={<Pokerdice />} />

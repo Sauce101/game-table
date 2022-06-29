@@ -1,16 +1,31 @@
 import React from 'react'
 import { Card, CardActionArea, CardMedia } from '@mui/material'
-import RedDBack from '../../assets/cards/plain/2B.svg'
-import DarkDBack from '../../assets/cards/plain/1B.svg'
+import RedDBack from '../../../assets/cards/plain/2B.svg'
+import DarkDBack from '../../../assets/cards/plain/1B.svg'
 
 const DeckCardData = ({ flipCards, nextdeck, ...cardsize }) => {
   return (
     <Card
       sx={{
         '@media (orientation: portrait)': {
-          maxWidth: cardsize.cardWidthP,
+          '@media (max-height: 739px)': {
+            maxWidth: cardsize.cardWidthPsm,
+          },
+          '@media (min-height: 740px) and (max-height: 915px)': {
+            maxWidth: cardsize.cardWidthP,
+          },
+          '@media (min-height: 916px)': {
+            maxWidth: cardsize.cardWidthPmd,
+          },
+          maxHeight: '100%',
           borderRadius: cardsize.radius,
-          mx: 'auto',
+          position: 'relative',
+          top: '0',
+          bottom: '0',
+          left: '0',
+          right: '0',
+          margin: 'auto',
+          // mx: 'auto',
         },
         '@media (orientation: landscape)': {
           maxWidth: cardsize.cardWidthL,

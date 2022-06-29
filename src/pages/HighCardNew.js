@@ -1,8 +1,14 @@
-import React from 'react'
 import SelectMenu from '../components/SelectMenu'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
-import { AppBar, Box, CssBaseline, Toolbar, Typography } from '@mui/material'
-import DeckTwo from '../components/DeckTwo'
+import {
+  AppBar,
+  Box,
+  Stack,
+  CssBaseline,
+  Toolbar,
+  Typography,
+} from '@mui/material'
+import DeckTwoNew from '../components/DeckTwoNew'
 
 const theme = createTheme({
   palette: {
@@ -21,24 +27,23 @@ const theme = createTheme({
   },
 })
 
-export default function HighCard() {
+const HighCardNew = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Box
+      <Stack
+        direction="column"
+        justifyContent="center"
+        spacing={8}
         sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
           minHeight: '100vh',
           backgroundColor: 'primary.main',
+          overflow: 'hidden',
         }}
       >
         <AppBar
-          position="relative"
           sx={{
             backgroundColor: 'secondary.main',
-            mb: 'auto',
           }}
         >
           <Toolbar>
@@ -58,8 +63,10 @@ export default function HighCard() {
             </Box>
           </Toolbar>
         </AppBar>
-        <DeckTwo />
-      </Box>
+        <DeckTwoNew />
+      </Stack>
     </ThemeProvider>
   )
 }
+
+export default HighCardNew

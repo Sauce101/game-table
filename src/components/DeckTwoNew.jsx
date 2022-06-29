@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Grid } from '@mui/material'
 import Deck from './deck/PlainDeck'
-import PlayerCardData from './cardData/PlayerCardData'
-import ComputerCardData from './cardData/ComputerCardData'
-import DeckCardData from './cardData/DeckCardData'
+import PcData from './cardData/highCardData/PcData'
+import CcData from './cardData/highCardData/CcData'
+import DeckData from './cardData/highCardData/DeckData'
 
 let playerDeck, computerDeck, playerCard, computerCard
 
@@ -20,7 +20,7 @@ function StartGame() {
 }
 StartGame()
 
-export default function DeckTwo() {
+const DeckTwoNew = () => {
   const [topcard, setTopcard] = useState(() => {
     return true
   })
@@ -42,61 +42,54 @@ export default function DeckTwo() {
   // Card size
   let cardsize = {
     radius: '14px',
-    cardWidthL: '55%',
-    cardWidthP: '27%',
+    cardWidthL: '70%',
+    // cardWidthP: '27%',
+    cardWidthPsm: '32%',
+    cardWidthP: '40%',
+    cardWidthPmd: '26%',
   }
 
   return (
     <>
       <Grid
+        container
         sx={{
           '@media (orientation: portrait)': {
             display: 'grid',
-            gridTemplateRows: 'repeat(3, 1fr)',
-            gap: 5,
+            gridTemplateColumns: '1fr',
+            gap: 3,
           },
           '@media (orientation: landscape)': {
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplate: '1fr / repeat(3, 1fr)',
+            gap: 5,
+            px: 5,
           },
-          mb: 'auto',
         }}
       >
-        <Grid item xs={12} sm={4} sx={{ perspective: '1000px' }}>
+        <Grid item sx={{ perspective: '1000px' }}>
           {topcard && (
-            <PlayerCardData
-              playerCard={playerCard}
-              nextdeck={nextdeck}
-              {...cardsize}
-            />
+            <PcData playerCard={playerCard} nextdeck={nextdeck} {...cardsize} />
           )}
           {!topcard && (
-            <PlayerCardData
-              playerCard={playerCard}
-              nextdeck={nextdeck}
-              {...cardsize}
-            />
+            <PcData playerCard={playerCard} nextdeck={nextdeck} {...cardsize} />
           )}
         </Grid>
 
-        <Grid item xs={12} sm={4} sx={{ perspective: '1000px' }}>
-          <DeckCardData
-            flipCards={flipCards}
-            nextdeck={nextdeck}
-            {...cardsize}
-          />
+        <Grid item sx={{ perspective: '1000px' }}>
+          <DeckData flipCards={flipCards} nextdeck={nextdeck} {...cardsize} />
         </Grid>
 
-        <Grid item xs={12} sm={4} sx={{ perspective: '1000px' }}>
+        <Grid item sx={{ perspective: '1000px' }}>
           {topcard && (
-            <ComputerCardData
+            <CcData
               computerCard={computerCard}
               nextdeck={nextdeck}
               {...cardsize}
             />
           )}
           {!topcard && (
-            <ComputerCardData
+            <CcData
               computerCard={computerCard}
               nextdeck={nextdeck}
               {...cardsize}
@@ -107,3 +100,5 @@ export default function DeckTwo() {
     </>
   )
 }
+
+export default DeckTwoNew
