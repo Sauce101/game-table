@@ -24,6 +24,7 @@ const ComputerCardData = ({ computerCard, nextdeck, ...cardsize }) => {
   return (
     <>
       <Card
+        elevation={24}
         sx={{
           '@media (orientation: portrait)': {
             '@media (max-height: 739px)': {
@@ -43,14 +44,14 @@ const ComputerCardData = ({ computerCard, nextdeck, ...cardsize }) => {
             bottom: '0',
             right: '0',
             margin: 'auto',
-            animation: `${backsidePortrait} .3s 1 linear`,
+            animation: `${backsidePortrait} .5s 1 linear`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
           },
           '@media (orientation: landscape)': {
             maxWidth: cardsize.cardWidthL,
             borderRadius: cardsize.radius,
-            animation: `${backsideLandscape} .3s 1 linear`,
+            animation: `${backsideLandscape} .5s 1 linear`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
             position: 'absolute',
@@ -69,6 +70,7 @@ const ComputerCardData = ({ computerCard, nextdeck, ...cardsize }) => {
         />
       </Card>
       <Card
+        elevation={24}
         sx={{
           '@media (orientation: portrait)': {
             '@media (max-height: 739px)': {
@@ -88,14 +90,14 @@ const ComputerCardData = ({ computerCard, nextdeck, ...cardsize }) => {
             left: '0',
             right: '0',
             margin: 'auto',
-            animation: `${rotationPortrait} .3s 1 linear`,
+            animation: `${rotationPortrait} .5s 1 linear`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
           },
           '@media (orientation: landscape)': {
             maxWidth: cardsize.cardWidthL,
             borderRadius: cardsize.radius,
-            animation: `${rotationLandscape} .3s 1 linear`,
+            animation: `${rotationLandscape} .5s 1 linear`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
             position: 'relative',

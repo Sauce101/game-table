@@ -6,6 +6,7 @@ import DarkDBack from '../../../assets/cards/plain/1B.svg'
 const DeckCardData = ({ flipCards, nextdeck, ...cardsize }) => {
   return (
     <Card
+      elevation={24}
       sx={{
         '@media (orientation: portrait)': {
           '@media (max-height: 739px)': {
