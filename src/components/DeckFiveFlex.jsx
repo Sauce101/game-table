@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Box } from '@mui/material'
 import Deck from './deck/PlainDeck'
-import FiveCardData from './cardData/FiveCardData'
+import FiveData from './cardData/FiveData'
 
 let playerDeck, playerCard, playerCardB, playerCardC, playerCardD, playerCardE
 
@@ -86,7 +86,7 @@ export default function DeckFiveFlex() {
             key={spot}
           >
             {topcard && (
-              <FiveCardData
+              <FiveData
                 flipCards={flipCards}
                 playerCard={spot}
                 nextdeck={nextdeck}
@@ -94,7 +94,7 @@ export default function DeckFiveFlex() {
               />
             )}
             {!topcard && (
-              <FiveCardData
+              <FiveData
                 flipCards={flipCards}
                 playerCard={spot}
                 nextdeck={nextdeck}

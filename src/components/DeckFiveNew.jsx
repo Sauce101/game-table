@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Grid } from '@mui/material'
 import Deck from './deck/PlainDeck'
-import FiveDataNew from './cardData/FiveDataNew'
+import FiveData from './cardData/FiveData'
 
 let playerDeck, playerCardA, playerCardB, playerCardC, playerCardD, playerCardE
 
@@ -52,11 +52,11 @@ export default function DeckFiveNew() {
   }
 
   let POSITION = [
-    { play: playerCardA, spin: '.4s' },
-    { play: playerCardB, spin: '.5s' },
-    { play: playerCardC, spin: '.6s' },
-    { play: playerCardD, spin: '.7s' },
-    { play: playerCardE, spin: '.8s' },
+    { play: playerCardA, spin: '.3s' },
+    { play: playerCardB, spin: '.4s' },
+    { play: playerCardC, spin: '.5s' },
+    { play: playerCardD, spin: '.6s' },
+    { play: playerCardE, spin: '.7s' },
   ]
 
   return (
@@ -81,12 +81,12 @@ export default function DeckFiveNew() {
           <Grid
             item
             sx={{
-              perspective: '1000px',
+              perspective: '900px',
             }}
             key={spot.play}
           >
             {(topcard || !topcard) && (
-              <FiveDataNew
+              <FiveData
                 flipCards={flipCards}
                 playerCard={spot.play}
                 spin={spot.spin}

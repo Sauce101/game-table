@@ -4,27 +4,21 @@ import { keyframes } from '@emotion/react'
 import RedDBack from '../../assets/cards/plain/2B.svg'
 import DarkDBack from '../../assets/cards/plain/1B.svg'
 
-const FiveDataNew = ({
-  flipCards,
-  playerCard,
-  spin,
-  nextdeck,
-  ...cardsize
-}) => {
+const FiveData = ({ flipCards, playerCard, spin, nextdeck, ...cardsize }) => {
   const rotationPortrait = keyframes({
-    from: { transform: 'rotateX(0deg)' },
+    from: { transform: 'rotateX(90deg)' },
     to: { transform: 'rotateX(360deg)' },
   })
   const backsidePortrait = keyframes({
-    from: { transform: 'rotateX(180deg)' },
+    from: { transform: 'rotateX(270deg)' },
     to: { transform: 'rotateX(540deg)' },
   })
   const rotationLandscape = keyframes({
-    from: { transform: 'rotateY(0deg)' },
+    from: { transform: 'rotateY(90deg)' },
     to: { transform: 'rotateY(360deg)' },
   })
   const backsideLandscape = keyframes({
-    from: { transform: 'rotateY(180deg)' },
+    from: { transform: 'rotateY(270deg)' },
     to: { transform: 'rotateY(540deg)' },
   })
 
@@ -57,7 +51,7 @@ const FiveDataNew = ({
           '@media (orientation: landscape)': {
             maxWidth: cardsize.cardWidthL,
             borderRadius: cardsize.radius,
-            animation: `${backsideLandscape} ${spin} 1 ease-out`,
+            animation: `${backsideLandscape} ${spin} 1 linear`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
             position: 'absolute',
@@ -102,7 +96,7 @@ const FiveDataNew = ({
           '@media (orientation: landscape)': {
             maxWidth: cardsize.cardWidthL,
             borderRadius: cardsize.radius,
-            animation: `${rotationLandscape} ${spin} 1 ease-out`,
+            animation: `${rotationLandscape} ${spin} 1 linear`,
             transformStyle: 'preserve-3d',
             backfaceVisibility: 'hidden',
             position: 'relative',
@@ -125,4 +119,4 @@ const FiveDataNew = ({
   )
 }
 
-export default FiveDataNew
+export default FiveData
