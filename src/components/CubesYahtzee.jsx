@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Box, Grid, Card, CardMedia, Button } from '@mui/material'
-import Deck from './dice/yahtzee/Die'
 import D1 from '../assets/dice/white/one.svg'
 import D2 from '../assets/dice/white/two.svg'
 import D3 from '../assets/dice/white/three.svg'
@@ -8,83 +7,32 @@ import D4 from '../assets/dice/white/four.svg'
 import D5 from '../assets/dice/white/five.svg'
 import D6 from '../assets/dice/white/six.svg'
 import CasinoIcon from '@mui/icons-material/Casino'
+import rollTo from './dice/yahtzee/Die'
 
-let playerDeck,
-  playerCard,
-  playerDeckB,
-  playerCardB,
-  playerDeckC,
-  playerCardC,
-  playerDeckD,
-  playerCardD,
-  playerDeckE,
-  playerCardE
+let die1, die2, die3, die4, die5
+const random_shake = () => rollTo[Math.floor(Math.random() * rollTo.length)]
 
 StartGame()
 function StartGame() {
-  const deck = new Deck()
-  deck.shuffle()
-  const allSides = Math.ceil(deck.numberOfCards)
-  playerDeck = new Deck(deck.cards.slice(0, allSides))
-  playerCard = playerDeck.pop()
+  die1 = rollTo[4]
+  die2 = rollTo[4]
+  die3 = rollTo[4]
+  die4 = rollTo[4]
+  die5 = rollTo[4]
 }
 
-StartGameB()
-function StartGameB() {
-  const deck = new Deck()
-  deck.shuffle()
-  const allSides = Math.ceil(deck.numberOfCards)
-  playerDeckB = new Deck(deck.cards.slice(0, allSides))
-  playerCardB = playerDeckB.pop()
-}
-StartGameC()
-function StartGameC() {
-  const deck = new Deck()
-  deck.shuffle()
-  const allSides = Math.ceil(deck.numberOfCards)
-  playerDeckC = new Deck(deck.cards.slice(0, allSides))
-  playerCardC = playerDeckC.pop()
-}
-StartGameD()
-function StartGameD() {
-  const deck = new Deck()
-  deck.shuffle()
-  const allSides = Math.ceil(deck.numberOfCards)
-  playerDeckD = new Deck(deck.cards.slice(0, allSides))
-  playerCardD = playerDeckD.pop()
-}
-StartGameE()
-function StartGameE() {
-  const deck = new Deck()
-  deck.shuffle()
-  const allSides = Math.ceil(deck.numberOfCards)
-  playerDeckE = new Deck(deck.cards.slice(0, allSides))
-  playerCardE = playerDeckE.pop()
-}
-
-export default function CubesCraps() {
+const CubesYahtzee = () => {
   const [topface, setTopface] = useState(() => {
-    return true
-  })
-  const [nextdice, setNextdice] = useState(() => {
     return true
   })
 
   useEffect(() => {
-    playerCard = playerDeck.pop()
-    playerCardB = playerDeckB.pop()
-    playerCardC = playerDeckC.pop()
-    playerCardD = playerDeckD.pop()
-    playerCardE = playerDeckE.pop()
-    if (playerDeck.numberOfCards === 3) {
-      StartGame()
-      StartGameB()
-      StartGameC()
-      StartGameD()
-      StartGameE()
-      setNextdice(!nextdice)
-    }
-  }, [topface, nextdice])
+    die1 = random_shake(rollTo)
+    die2 = random_shake(rollTo)
+    die3 = random_shake(rollTo)
+    die4 = random_shake(rollTo)
+    die5 = random_shake(rollTo)
+  }, [topface])
 
   const rollDice = () => {
     setTopface(!topface)
@@ -97,23 +45,23 @@ export default function CubesCraps() {
     height: '100px',
   }
 
-  const DICE = [playerCard, playerCardB, playerCardC, playerCardD, playerCardE]
+  const DICE = [die1, die2, die3, die4, die5]
 
-  const POSITION = [
+  const BUILD_DICE = [
     {
       transform: 'rotateY(0deg) translateZ(50px)',
       src: D3,
       alt: 'three front',
     },
     {
-      transform: 'rotateY(180deg) translateZ(50px)',
-      src: D4,
-      alt: 'four back',
-    },
-    {
       transform: 'rotateY(90deg) translateZ(50px)',
       src: D5,
       alt: 'five right',
+    },
+    {
+      transform: 'rotateY(180deg) translateZ(50px)',
+      src: D4,
+      alt: 'four back',
     },
     {
       transform: 'rotateY(-90deg) translateZ(50px)',
@@ -152,7 +100,7 @@ export default function CubesCraps() {
           },
         }}
       >
-        {DICE.map((die, index) => (
+        {DICE.map((roll, index) => (
           <Grid
             item
             className="scenes"
@@ -168,15 +116,15 @@ export default function CubesCraps() {
             <Box
               // cube
               sx={{
-                transform: `${die}`,
+                transform: `${roll}`,
                 width: '100px',
                 height: '100px',
                 position: 'relative',
                 transformStyle: 'preserve-3d',
-                transition: 'transform 0.8s',
+                transition: 'transform 1.2s',
               }}
             >
-              {POSITION.map((spot, index) => (
+              {BUILD_DICE.map((spot, index) => (
                 <Card
                   key={index}
                   sx={{
@@ -213,8 +161,8 @@ export default function CubesCraps() {
             color="secondary"
             endIcon={<CasinoIcon />}
             sx={{
-              height: 100,
-              width: 100,
+              height: '100%',
+              width: '100%',
               backgroundColor: '#1b0000',
             }}
           >
@@ -225,3 +173,5 @@ export default function CubesCraps() {
     </>
   )
 }
+
+export default CubesYahtzee
