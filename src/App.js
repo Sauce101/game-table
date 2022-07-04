@@ -8,7 +8,7 @@ import Home from './pages'
 import HighCardNew from './pages/HighCardNew'
 import Craps from './pages/Craps'
 import Pokerdice from './pages/Pokerdice'
-import Yahtzee from './pages/Yahtzee'
+import YahtzeeNew from './pages/YahtzeeNew'
 import FiveCardNew from './pages/FiveCardNew'
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
           <Route path="/fivecard" element={<FiveCardNew />} />
           <Route path="/craps" element={<Craps />} />
           <Route path="/pokerdice" element={<Pokerdice />} />
-          <Route path="/yahtzee" element={<Yahtzee />} />
+          <Route path="/yahtzee" element={<YahtzeeNew />} />
         </Routes>
       </Router>
     </>
