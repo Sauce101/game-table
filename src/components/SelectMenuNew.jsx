@@ -41,9 +41,12 @@ const SelectMenuNew = () => {
             <ListItemButton onClick={() => setOpenDrawer(false)} key={index}>
               <Link
                 to={`${game.table}`}
-                variant="h6"
-                underline="hover"
-                sx={{ color: 'white' }}
+                style={{
+                  textDecoration: 'none',
+                }}
+                // variant="h6"
+                // underline="none"
+                // sx={{ color: 'white' }}
               >
                 <ListItemIcon>
                   <ListItemText
