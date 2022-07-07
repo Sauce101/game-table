@@ -31,7 +31,7 @@ function StartGame() {
   die5 = rollTo[4]
 }
 
-const DiceYahtzee = () => {
+const Yahtzee = () => {
   const [topface, setTopface] = useState(() => {
     return true
   })
@@ -155,4 +155,4 @@ const DiceYahtzee = () => {
   )
 }
 
-export default DiceYahtzee
+export default Yahtzee

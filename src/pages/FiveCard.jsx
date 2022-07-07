@@ -20,7 +20,7 @@ function StartGame() {
 }
 StartGame()
 
-export default function DeckFiveNew() {
+const FiveCard = () => {
   const [topcard, setTopcard] = useState(() => {
     return true
   })
@@ -100,3 +100,5 @@ export default function DeckFiveNew() {
     </>
   )
 }
+
+export default FiveCard

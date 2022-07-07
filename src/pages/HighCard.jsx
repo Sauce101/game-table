@@ -20,7 +20,7 @@ function StartGame() {
 }
 StartGame()
 
-const DeckTwoNew = () => {
+const HighCard = () => {
   const [topcard, setTopcard] = useState(() => {
     return true
   })
@@ -43,7 +43,6 @@ const DeckTwoNew = () => {
   let cardsize = {
     radius: '14px',
     cardWidthL: '70%',
-    // cardWidthP: '27%',
     cardWidthPsm: '32%',
     cardWidthP: '40%',
     cardWidthPmd: '26%',
@@ -101,4 +100,4 @@ const DeckTwoNew = () => {
   )
 }
 
-export default DeckTwoNew
+export default HighCard

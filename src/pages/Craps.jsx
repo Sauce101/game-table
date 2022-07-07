@@ -26,7 +26,7 @@ function StartGame() {
   die2 = rollTo[4]
 }
 
-export default function CrapsNew() {
+const Craps = () => {
   const [topface, setTopface] = useState(() => {
     return true
   })
@@ -126,3 +126,5 @@ export default function CrapsNew() {
     </>
   )
 }
+
+export default Craps

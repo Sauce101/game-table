@@ -19,9 +19,14 @@ function StartGame() {
   die5 = PokerDieFaces[0]
 }
 
-const PokerDiceNew = () => {
+const PokerDice = () => {
   const [topface, setTopface] = useState(() => {
     return true
+  })
+
+  const diespin = keyframes({
+    from: { transform: 'rotate(0deg)' },
+    to: { transform: 'rotate(360deg)' },
   })
 
   useEffect(() => {
@@ -36,17 +41,14 @@ const PokerDiceNew = () => {
     setTopface(!topface)
   }
 
-  const diespin = keyframes({
-    from: { transform: 'rotate(0deg)' },
-    to: { transform: 'rotate(360deg)' },
-  })
+  const dieSize = medW.matches || medH.matches ? '150px' : '75px'
 
   const POSITION = [
-    { play: die1, spinrate: '0.5s' },
-    { play: die2, spinrate: '0.6s' },
-    { play: die3, spinrate: '0.6s' },
-    { play: die4, spinrate: '0.7s' },
-    { play: die5, spinrate: '0.7s' },
+    { play: die1, spinrate: '0.5s', spin: diespin },
+    { play: die2, spinrate: '0.6s', spin: diespin },
+    { play: die3, spinrate: '0.6s', spin: diespin },
+    { play: die4, spinrate: '0.7s', spin: diespin },
+    { play: die5, spinrate: '0.7s', spin: diespin },
   ]
   return (
     <>
@@ -75,18 +77,18 @@ const PokerDiceNew = () => {
               <Card
                 sx={{
                   '@media (orientation: portrait)': {
-                    width: medW.matches || medH.matches ? '200px' : '100px',
-                    height: medW.matches || medH.matches ? '200px' : '100px',
+                    width: dieSize,
+                    height: dieSize,
                     borderRadius: '20%',
                     margin: 'auto',
-                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
+                    animation: `${spot.spin} ${spot.spinrate} 1 ease-out`,
                   },
                   '@media (orientation: landscape)': {
-                    width: medW.matches || medH.matches ? '200px' : '100px',
-                    height: medW.matches || medH.matches ? '200px' : '100px',
+                    width: dieSize,
+                    height: dieSize,
                     borderRadius: '20%',
                     margin: 'auto',
-                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
+                    animation: `${spot.spin} ${spot.spinrate} 1 ease-out`,
                   },
                 }}
               >
@@ -97,18 +99,18 @@ const PokerDiceNew = () => {
               <Card
                 sx={{
                   '@media (orientation: portrait)': {
-                    width: medW.matches || medH.matches ? '200px' : '100px',
-                    height: medW.matches || medH.matches ? '200px' : '100px',
+                    width: dieSize,
+                    height: dieSize,
                     borderRadius: '20%',
                     margin: 'auto',
-                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
+                    animation: `${spot.spin} ${spot.spinrate} 1 ease-out`,
                   },
                   '@media (orientation: landscape)': {
-                    width: medW.matches || medH.matches ? '200px' : '100px',
-                    height: medW.matches || medH.matches ? '200px' : '100px',
+                    width: dieSize,
+                    height: dieSize,
                     borderRadius: '20%',
                     margin: 'auto',
-                    animation: `${diespin} ${spot.spinrate} 1 ease-out`,
+                    animation: `${spot.spin} ${spot.spinrate} 1 ease-out`,
                   },
                 }}
               >
@@ -122,4 +124,4 @@ const PokerDiceNew = () => {
   )
 }
 
-export default PokerDiceNew
+export default PokerDice
