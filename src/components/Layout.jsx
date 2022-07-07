@@ -1,19 +1,10 @@
 import React from 'react'
-
 import SelectMenuNew from '../components/SelectMenuNew'
 import { Outlet } from 'react-router-dom'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { NavLink, Link } from 'react-router-dom'
-import {
-  AppBar,
-  Box,
-  Stack,
-  CssBaseline,
-  Toolbar,
-  // Typography,
-  // Link,
-} from '@mui/material'
+import { AppBar, Box, Stack, CssBaseline, Toolbar } from '@mui/material'
 
 const theme = createTheme({
   palette: {
@@ -34,7 +25,6 @@ const theme = createTheme({
 
 const Layout = () => {
   const matches = useMediaQuery('(min-width:600px)')
-  // const [tableName, SetTableName] = useState('Lobby')
 
   const PAGES = [
     'highcard',
@@ -64,17 +54,6 @@ const Layout = () => {
           }}
         >
           <Toolbar>
-            {/* <Typography
-              variant="h6"
-              color="inherit"
-              noWrap
-              sx={{
-                ml: 2,
-                mr: 'auto',
-              }}
-            >
-              Nonea
-            </Typography> */}
             <Link
               to="/lobby"
               style={{
@@ -97,7 +76,8 @@ const Layout = () => {
                         return {
                           color: isActive ? 'white' : 'grey',
                           marginLeft: '12px',
-                          textDecoration: 'none',
+                          textDecoration: isActive ? 'underline' : 'none',
+                          textUnderlineOffset: '3px',
                           fontSize: '1em',
                           textTransform: 'uppercase',
                         }

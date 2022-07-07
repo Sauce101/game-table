@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import {
-  Link,
+  // Link,
   List,
   ListItemButton,
   ListItemIcon,
@@ -39,7 +40,7 @@ const SelectMenuNew = () => {
           {tables.map((game, index) => (
             <ListItemButton onClick={() => setOpenDrawer(false)} key={index}>
               <Link
-                href={`${game.table}`}
+                to={`${game.table}`}
                 variant="h6"
                 underline="hover"
                 sx={{ color: 'white' }}
