@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import {
-  // Link,
   List,
   ListItemButton,
   ListItemIcon,
@@ -44,9 +43,6 @@ const SelectMenuNew = () => {
                 style={{
                   textDecoration: 'none',
                 }}
-                // variant="h6"
-                // underline="none"
-                // sx={{ color: 'white' }}
               >
                 <ListItemIcon>
                   <ListItemText
@@ -64,10 +60,11 @@ const SelectMenuNew = () => {
         </List>
       </Drawer>
       <IconButton
+        aria-label="menu"
         sx={{ color: 'white', marginLeft: 'auto' }}
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <MenuIcon className="hamburger" />
+        <MenuIcon />
       </IconButton>
     </>
   )

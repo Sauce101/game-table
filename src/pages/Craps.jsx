@@ -86,7 +86,6 @@ const Craps = () => {
           >
             <Box
               // cube
-
               sx={{
                 transform: `${roll}`,
                 width: medW.matches || medH.matches ? '200px' : '100px',
