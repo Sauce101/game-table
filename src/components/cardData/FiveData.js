@@ -25,6 +25,7 @@ const FiveData = ({ flipCards, playerCard, spin, nextdeck, ...cardsize }) => {
   return (
     <>
       <Card
+        elevation={16}
         sx={{
           '@media (orientation: portrait)': {
             '@media (max-height: 739px)': {
@@ -70,6 +71,7 @@ const FiveData = ({ flipCards, playerCard, spin, nextdeck, ...cardsize }) => {
         />
       </Card>
       <Card
+        elevation={16}
         sx={{
           '@media (orientation: portrait)': {
             '@media (max-height: 739px)': {

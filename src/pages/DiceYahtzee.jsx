@@ -2,7 +2,12 @@ import React, { useState, useEffect } from 'react'
 import { Box, Grid, Card, CardMedia, Button } from '@mui/material'
 
 import CasinoIcon from '@mui/icons-material/Casino'
-import { buildMd, buildSm, rotateMd, rotateSm } from './dice/yahtzee/Die'
+import {
+  buildMd,
+  buildSm,
+  rotateMd,
+  rotateSm,
+} from '../components/dice/yahtzee/Die'
 
 let rollTo, diceStart, die1, die2, die3, die4, die5
 const medW = window.matchMedia('(min-width: 1000px)')

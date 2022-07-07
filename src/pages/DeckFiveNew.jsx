@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Grid } from '@mui/material'
-import Deck from './deck/PlainDeck'
-import FiveData from './cardData/FiveData'
+import Deck from '../components/deck/PlainDeck'
+import FiveData from '../components/cardData/FiveData'
 
 let playerDeck, playerCardA, playerCardB, playerCardC, playerCardD, playerCardE
 

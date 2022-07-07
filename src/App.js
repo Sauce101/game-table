@@ -4,12 +4,14 @@ import {
   Route,
   Navigate,
 } from 'react-router-dom'
-import Home from './pages'
-import HighCardNew from './pages/HighCardNew'
-import Craps from './pages/Craps'
-import Pokerdice from './pages/Pokerdice'
-import YahtzeeNew from './pages/YahtzeeNew'
-import FiveCardNew from './pages/FiveCardNew'
+import Home from './pages/Home'
+import Layout from './components/Layout'
+import DeckTwoNew from './pages/DeckTwoNew'
+import DeckFiveNew from './pages/DeckFiveNew'
+import CrapsNew from './pages/CrapsNew'
+import PokerDiceNew from './pages/PokerDiceNew'
+import DiceYahtzee from './pages/DiceYahtzee'
+import Error from './pages/Error'
 
 export default function App() {
   return (
@@ -17,12 +19,15 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/lobby" element={<Navigate to="/" />} />
-          <Route path="/highcard" element={<HighCardNew />} />
-          <Route path="/fivecard" element={<FiveCardNew />} />
-          <Route path="/craps" element={<Craps />} />
-          <Route path="/pokerdice" element={<Pokerdice />} />
-          <Route path="/yahtzee" element={<YahtzeeNew />} />
+          <Route element={<Layout />}>
+            <Route path="highcard" element={<DeckTwoNew />} />
+            <Route path="fivecard" element={<DeckFiveNew />} />
+            <Route path="craps" element={<CrapsNew />} />
+            <Route path="pokerdice" element={<PokerDiceNew />} />
+            <Route path="yahtzee" element={<DiceYahtzee />} />
+            <Route path="lobby" element={<Navigate to="/" />} />
+          </Route>
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </>

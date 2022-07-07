@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import hilow from '../assets/images/hilow.png'
 import fivestud from '../assets/images/fcs.jpg'
 import crapspic from '../assets/images/crapspic.jpg'
@@ -15,7 +16,6 @@ import {
   Grid,
   Toolbar,
   Typography,
-  Link,
   CardActionArea,
 } from '@mui/material'
 
@@ -89,8 +89,8 @@ export default function Home() {
               },
             }}
           >
-            {games.map(game => (
-              <Grid item key={game}>
+            {games.map((game, index) => (
+              <Grid item key={index}>
                 <Card
                   sx={{
                     '@media (orientation: portrait)': {
@@ -105,7 +105,7 @@ export default function Home() {
                 >
                   <CardActionArea
                     component={Link}
-                    href={game.table}
+                    to={game.table}
                     underline="none"
                     sx={{
                       borderRadius: 16,

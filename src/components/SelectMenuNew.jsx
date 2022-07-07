@@ -10,7 +10,7 @@ import {
   IconButton,
 } from '@mui/material'
 
-const GAMES = [
+const tables = [
   { table: 'lobby', name: 'Lobby' },
   { table: 'highcard', name: 'High Card' },
   { table: 'fivecard', name: 'Five Card' },
@@ -19,7 +19,7 @@ const GAMES = [
   { table: 'yahtzee', name: 'Yahtzee' },
 ]
 
-const SelectMenu = () => {
+const SelectMenuNew = () => {
   const [openDrawer, setOpenDrawer] = useState()
 
   return (
@@ -36,7 +36,7 @@ const SelectMenu = () => {
         }}
       >
         <List>
-          {GAMES.map((game, index) => (
+          {tables.map((game, index) => (
             <ListItemButton onClick={() => setOpenDrawer(false)} key={index}>
               <Link
                 href={`${game.table}`}
@@ -69,4 +69,4 @@ const SelectMenu = () => {
   )
 }
 
-export default SelectMenu
+export default SelectMenuNew
