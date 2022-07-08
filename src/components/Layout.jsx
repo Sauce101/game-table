@@ -5,6 +5,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { NavLink, Link } from 'react-router-dom'
 import { AppBar, Box, Stack, CssBaseline, Toolbar } from '@mui/material'
+import HomeIcon from '@mui/icons-material/Home'
 
 const theme = createTheme({
   palette: {
@@ -26,14 +27,7 @@ const theme = createTheme({
 const Layout = () => {
   const matches = useMediaQuery('(min-width:600px)')
 
-  const PAGES = [
-    'highcard',
-    'fivecard',
-    'craps',
-    'pokerdice',
-    'yahtzee',
-    // 'lobby',
-  ]
+  const PAGES = ['highcard', 'fivecard', 'craps', 'pokerdice', 'yahtzee']
 
   return (
     <ThemeProvider theme={theme}>
@@ -41,6 +35,7 @@ const Layout = () => {
       <Stack
         direction="column"
         justifyContent="center"
+        alignItems="center"
         spacing={8}
         sx={{
           minHeight: '100vh',
@@ -51,20 +46,22 @@ const Layout = () => {
         <AppBar
           sx={{
             backgroundColor: 'secondary.main',
+            my: 'auto',
           }}
         >
           <Toolbar>
-            <Link
-              to="/lobby"
-              style={{
-                color: 'white',
-                textDecoration: 'none',
-                fontSize: '1.2em',
-                textTransform: 'capitalize',
-              }}
-            >
-              LOBBY
-            </Link>
+            <Box sx={{ pt: 1 }}>
+              <Link
+                to="/lobby"
+                style={{
+                  color: 'white',
+                  textDecoration: 'none',
+                  textTransform: 'capitalize',
+                }}
+              >
+                <HomeIcon sx={{ my: 'auto' }} fontSize="large" />
+              </Link>
+            </Box>
             <Box sx={{ marginLeft: 'auto' }}>
               {matches ? (
                 <Box>
