@@ -81,7 +81,7 @@ const FiveCard = () => {
           <Grid
             item
             sx={{
-              perspective: '900px',
+              perspective: '900px', transformStyle: 'preserve-3d'
             }}
             key={spot.play}
           >

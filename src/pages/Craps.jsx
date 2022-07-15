@@ -98,6 +98,8 @@ const Craps = () => {
               {diceStart.map((spot, index) => (
                 <Card
                   // dieFace
+                  elevation={0}
+                  square
                   key={index}
                   sx={{
                     transform: `${spot.transform}`,

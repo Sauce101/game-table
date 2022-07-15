@@ -66,7 +66,7 @@ const HighCard = () => {
           },
         }}
       >
-        <Grid item sx={{ perspective: '1000px' }}>
+        <Grid item sx={{ perspective: '1000px', transformStyle: 'preserve-3d' }}>
           {topcard && (
             <PcData playerCard={playerCard} nextdeck={nextdeck} {...cardsize} />
           )}
@@ -75,11 +75,11 @@ const HighCard = () => {
           )}
         </Grid>
 
-        <Grid item sx={{ perspective: '1000px' }}>
+        <Grid item>
           <DeckData flipCards={flipCards} nextdeck={nextdeck} {...cardsize} />
         </Grid>
 
-        <Grid item sx={{ perspective: '1000px' }}>
+        <Grid item sx={{ perspective: '1000px', transformStyle: 'preserve-3d' }}>
           {topcard && (
             <CcData
               computerCard={computerCard}

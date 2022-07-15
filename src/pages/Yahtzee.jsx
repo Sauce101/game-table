@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Box, Grid, Card, CardMedia, Button } from '@mui/material'
 
-import CasinoIcon from '@mui/icons-material/Casino'
 import {
   buildMd,
   buildSm,
@@ -105,6 +104,8 @@ const Yahtzee = () => {
               {diceStart.map((spot, index) => (
                 <Card
                   // dieFace
+                  elevation={0}
+                  square
                   key={index}
                   sx={{
                     transform: `${spot.transform}`,
@@ -140,11 +141,11 @@ const Yahtzee = () => {
           <Button
             variant="contained"
             color="secondary"
-            endIcon={<CasinoIcon />}
             sx={{
               width: '100%',
               height: '100%',
               backgroundColor: '#1b0000',
+              fontSize: medW.matches || medH.matches ? 24 : 16,
             }}
           >
             Roll

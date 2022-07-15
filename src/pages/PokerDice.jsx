@@ -75,6 +75,7 @@ const PokerDice = () => {
           <Grid item key={index}>
             {topface && (
               <Card
+                elevation={20}
                 sx={{
                   '@media (orientation: portrait)': {
                     width: dieSize,
@@ -97,6 +98,7 @@ const PokerDice = () => {
             )}
             {!topface && (
               <Card
+                elevation={20}
                 sx={{
                   '@media (orientation: portrait)': {
                     width: dieSize,
