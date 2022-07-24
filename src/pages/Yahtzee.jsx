@@ -19,7 +19,17 @@ if (medW.matches || medH.matches) {
   rollTo = rotateSm
 }
 
+// Dice responsive
+const diceResponsive = medW.matches || medH.matches ? '200px' : '100px'
+
 const random_shake = () => rollTo[Math.floor(Math.random() * rollTo.length)]
+
+// Build Dice
+if (medH.matches || medW.matches) {
+  diceStart = buildMd
+} else {
+  diceStart = buildSm
+}
 
 StartGame()
 function StartGame() {
@@ -36,11 +46,11 @@ const Yahtzee = () => {
   })
 
   useEffect(() => {
-    die1 = random_shake(rollTo)
-    die2 = random_shake(rollTo)
-    die3 = random_shake(rollTo)
-    die4 = random_shake(rollTo)
-    die5 = random_shake(rollTo)
+    die1 = random_shake()
+    die2 = random_shake()
+    die3 = random_shake()
+    die4 = random_shake()
+    die5 = random_shake()
   }, [topface])
 
   const rollDice = () => {
@@ -48,13 +58,6 @@ const Yahtzee = () => {
   }
 
   const DICE = [die1, die2, die3, die4, die5]
-
-  // Build Dice
-  if (medH.matches || medW.matches) {
-    diceStart = buildMd
-  } else {
-    diceStart = buildSm
-  }
 
   return (
     <>
@@ -84,8 +87,8 @@ const Yahtzee = () => {
             // sceen
             key={index}
             sx={{
-              width: medW.matches || medH.matches ? '200px' : '100px',
-              height: medW.matches || medH.matches ? '200px' : '100px',
+              width: diceResponsive,
+              height: diceResponsive,
               perspective: '400px',
               margin: 'auto',
             }}
@@ -94,8 +97,8 @@ const Yahtzee = () => {
               // cube
               sx={{
                 transform: `${roll}`,
-                width: medW.matches || medH.matches ? '200px' : '100px',
-                height: medW.matches || medH.matches ? '200px' : '100px',
+                width: diceResponsive,
+                height: diceResponsive,
                 position: 'relative',
                 transformStyle: 'preserve-3d',
                 transition: 'transform 1.2s',
@@ -111,8 +114,8 @@ const Yahtzee = () => {
                     transform: `${spot.transform}`,
                     background: 'hsla(0, 100%, 100%, 1.0)',
                     position: 'absolute',
-                    width: medW.matches || medH.matches ? '200px' : '100px',
-                    height: medW.matches || medH.matches ? '200px' : '100px',
+                    width: diceResponsive,
+                    height: diceResponsive,
                   }}
                 >
                   <CardMedia
@@ -120,8 +123,8 @@ const Yahtzee = () => {
                     src={spot.src}
                     alt={spot.alt}
                     sx={{
-                      width: medW.matches || medH.matches ? '200px' : '100px',
-                      height: medW.matches || medH.matches ? '200px' : '100px',
+                      width: diceResponsive,
+                      height: diceResponsive,
                     }}
                   />
                 </Card>
@@ -133,8 +136,8 @@ const Yahtzee = () => {
           item
           onClick={rollDice}
           sx={{
-            width: medW.matches || medH.matches ? '200px' : '100px',
-            height: medW.matches || medH.matches ? '200px' : '100px',
+            width: diceResponsive,
+            height: diceResponsive,
             margin: 'auto',
           }}
         >

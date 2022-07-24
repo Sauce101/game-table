@@ -8,6 +8,7 @@ import {
 } from '../components/dice/craps/CrapsDie'
 
 let rollTo, diceStart, die1, die2
+
 const medW = window.matchMedia('(min-width: 1000px)')
 const medH = window.matchMedia('(min-height: 1000px)')
 
@@ -18,7 +19,18 @@ if (medW.matches || medH.matches) {
   rollTo = rotateSm
 }
 
+// Dice responsive
+const diceResponsive = medW.matches || medH.matches ? '200px' : '100px'
+
+// Shake
 const random_shake = () => rollTo[Math.floor(Math.random() * rollTo.length)]
+
+// Build Dice
+if (medH.matches || medW.matches) {
+  diceStart = buildMd
+} else {
+  diceStart = buildSm
+}
 
 StartGame()
 function StartGame() {
@@ -32,8 +44,8 @@ const Craps = () => {
   })
 
   useEffect(() => {
-    die1 = random_shake(rollTo)
-    die2 = random_shake(rollTo)
+    die1 = random_shake()
+    die2 = random_shake()
   }, [topface])
 
   const rollDice = () => {
@@ -42,89 +54,80 @@ const Craps = () => {
 
   const DICE = [die1, die2]
 
-  // Build Dice
-  if (medH.matches || medW.matches) {
-    diceStart = buildMd
-  } else {
-    diceStart = buildSm
-  }
-
   return (
-    <>
-      <Grid
-        container
-        sx={{
-          '@media (orientation: portrait)': {
-            display: 'grid',
-            gridTemplate: 'repeat(2, 1fr) / 1fr',
-            rowGap: 10,
-            px: 4,
-            justifyContent: 'center',
-          },
-          '@media (orientation: landscape)': {
-            display: 'grid',
-            direction: 'row',
-            gridTemplate: '1fr / repeat(2, 1fr)',
-            rowGap: 6,
-            px: 10,
-            justifyContent: 'center',
-          },
-        }}
-      >
-        {DICE.map((roll, index) => (
-          <Grid
-            item
-            onClick={rollDice}
-            // sceen
-            key={index}
+    <Grid
+      container
+      sx={{
+        '@media (orientation: portrait)': {
+          display: 'grid',
+          gridTemplate: 'repeat(2, 1fr) / 1fr',
+          rowGap: 10,
+          px: 4,
+          justifyContent: 'center',
+        },
+        '@media (orientation: landscape)': {
+          display: 'grid',
+          direction: 'row',
+          gridTemplate: '1fr / repeat(2, 1fr)',
+          rowGap: 6,
+          px: 10,
+          justifyContent: 'center',
+        },
+      }}
+    >
+      {DICE.map((roll, index) => (
+        <Grid
+          item
+          onClick={rollDice}
+          // sceen
+          key={index}
+          sx={{
+            width: diceResponsive,
+            height: diceResponsive,
+            perspective: '400px',
+            margin: 'auto',
+          }}
+        >
+          <Box
+            // cube
             sx={{
-              width: medW.matches || medH.matches ? '200px' : '100px',
-              height: medW.matches || medH.matches ? '200px' : '100px',
-              perspective: '400px',
-              margin: 'auto',
+              transform: `${roll}`,
+              width: diceResponsive,
+              height: diceResponsive,
+              position: 'relative',
+              transformStyle: 'preserve-3d',
+              transition: 'transform 1.2s',
             }}
           >
-            <Box
-              // cube
-              sx={{
-                transform: `${roll}`,
-                width: medW.matches || medH.matches ? '200px' : '100px',
-                height: medW.matches || medH.matches ? '200px' : '100px',
-                position: 'relative',
-                transformStyle: 'preserve-3d',
-                transition: 'transform 1.2s',
-              }}
-            >
-              {diceStart.map((spot, index) => (
-                <Card
-                  // dieFace
-                  elevation={0}
-                  square
-                  key={index}
+            {diceStart.map((spot, index) => (
+              <Card
+                // dieFace
+                elevation={0}
+                square
+                key={index}
+                sx={{
+                  transform: `${spot.transform}`,
+                  background: 'hsla(0, 90%, 50%, 0.7)',
+                  position: 'absolute',
+                  width: diceResponsive,
+                  height: diceResponsive,
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  src={spot.src}
+                  alt={spot.alt}
                   sx={{
-                    transform: `${spot.transform}`,
-                    background: 'hsla(0, 90%, 50%, 0.7)',
-                    position: 'absolute',
-                    width: medW.matches || medH.matches ? '200px' : '100px',
-                    height: medW.matches || medH.matches ? '200px' : '100px',
+                    width: diceResponsive,
+                    height: diceResponsive,
                   }}
-                >
-                  <CardMedia
-                    component="img"
-                    src={spot.src}
-                    alt={spot.alt}
-                    sx={{
-                      width: medW.matches || medH.matches ? '200px' : '100px',
-                      height: medW.matches || medH.matches ? '200px' : '100px',
-                    }}
-                  />
-                </Card>
-              ))}
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
-    </>
+                />
+              </Card>
+            ))}
+          </Box>
+        </Grid>
+      ))}
+    </Grid>
   )
 }
 
