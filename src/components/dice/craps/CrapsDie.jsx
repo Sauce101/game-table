@@ -1,9 +1,16 @@
-import D1 from '../../../assets/dice/craps/one.svg'
-import D2 from '../../../assets/dice/craps/two.svg'
-import D3 from '../../../assets/dice/craps/three.svg'
-import D4 from '../../../assets/dice/craps/four.svg'
-import D5 from '../../../assets/dice/craps/five.svg'
-import D6 from '../../../assets/dice/craps/six.svg'
+// import D1 from '../../../assets/dice/craps/one.svg'
+// import D2 from '../../../assets/dice/craps/two.svg'
+// import D3 from '../../../assets/dice/craps/three.svg'
+// import D4 from '../../../assets/dice/craps/four.svg'
+// import D5 from '../../../assets/dice/craps/five.svg'
+// import D6 from '../../../assets/dice/craps/six.svg'
+import D1 from '../../../assets/dice/mydice/one.svg'
+import D2 from '../../../assets/dice/mydice/two.svg'
+import D3 from '../../../assets/dice/mydice/three.svg'
+import D4 from '../../../assets/dice/mydice/four.svg'
+import D5 from '../../../assets/dice/mydice/five.svg'
+import D6 from '../../../assets/dice/mydice/six.svg'
+
 // Dice Rotate
 export const rotateMd = [
   // 3 front
