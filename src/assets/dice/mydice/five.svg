@@ -17,7 +17,7 @@
        rx="0"
        ry="24"
        fill="hsla(0, 90%, 50%, 0.5)"
-       stroke-width=".6"/>
+       stroke-width="0.6"/>
       <circle
          cx="100"
          cy="1022.5"

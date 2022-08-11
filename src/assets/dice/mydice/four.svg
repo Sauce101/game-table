@@ -22,25 +22,21 @@
          cx="50"
          cy="972.52002"
          r="20"
-         fill='white'
-         id="circle3523" />
+         fill='white' />
       <circle
          cx="150"
          cy="972.52002"
          r="20"
-         fill='white'
-         id="circle3525" />
+         fill='white' />
       <circle
          cx="50"
          cy="1072.5"
          r="20"
-         fill='white'
-         id="circle3527" />
+         fill='white' />
       <circle
          cx="150"
          cy="1072.5"
          r="20"
-         fill='white'
-         id="circle3529" />
+         fill='white' />
   </g>
 </svg>

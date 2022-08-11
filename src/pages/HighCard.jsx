@@ -55,7 +55,7 @@ const HighCard = () => {
         sx={{
           '@media (orientation: portrait)': {
             display: 'grid',
-            gridTemplateColumns: '1fr',
+            gridTemplate: 'repeat(3, 1fr) / 1fr',
             gap: 3,
           },
           '@media (orientation: landscape)': {
@@ -66,7 +66,10 @@ const HighCard = () => {
           },
         }}
       >
-        <Grid item sx={{ perspective: '1000px', transformStyle: 'preserve-3d' }}>
+        <Grid
+          item
+          sx={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
+        >
           {topcard && (
             <PcData playerCard={playerCard} nextdeck={nextdeck} {...cardsize} />
           )}
@@ -79,7 +82,10 @@ const HighCard = () => {
           <DeckData flipCards={flipCards} nextdeck={nextdeck} {...cardsize} />
         </Grid>
 
-        <Grid item sx={{ perspective: '1000px', transformStyle: 'preserve-3d' }}>
+        <Grid
+          item
+          sx={{ perspective: '1000px', transformStyle: 'preserve-3d' }}
+        >
           {topcard && (
             <CcData
               computerCard={computerCard}
